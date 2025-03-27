@@ -1,10 +1,11 @@
 import { motion }  from "framer-motion";
 import { FaGithub, FaLinkedin, FaArrowDown } from "react-icons/fa";
 import Button from "../Button/Button";
+import ListIcon from "./ListIcon";
 function Content() {
   return (
     <>
-      <div className="content grow p-4 flex flex-col items-center justify-center text-center">
+      <div className="content grow flex flex-col items-center justify-center text-center">
         <motion.h1
         className="text-5xl font-bold text-center"
         initial={{ opacity: 0, y: -50 }}
@@ -50,6 +51,7 @@ function Content() {
       >
         <FaArrowDown size={32} className="text-gray-500" />
       </motion.div>
+      <ListIcon />
       </div>
     </>
   );
