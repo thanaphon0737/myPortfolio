@@ -2,7 +2,7 @@ import { TbPointFilled } from "react-icons/tb";
 import data from "./experienceData"
 function Experience() {
   return (
-    <div className="w-xl ">
+    <div className="w-lg ">
       <div className="w-full">
         {data.map((step, index) => (
           <div key={index} className="flex items-start gap-4 relative h-32">

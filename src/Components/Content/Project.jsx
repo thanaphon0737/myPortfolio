@@ -5,7 +5,7 @@ import data from "./projectData";
 function Project() {
     console.log(data)
   return (
-    <div className="w-xl">
+    <div className="w-lg">
       {data.map((item) => (
         <div className="card">
           <img

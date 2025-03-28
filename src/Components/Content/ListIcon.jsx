@@ -8,7 +8,7 @@ function ListIcon() {
   const iconLast = icons.slice(half_index, icons.length)
 
   return (
-    <div className="w-xl">
+    <div className="w-lg">
       <h1 className="place-self-start my-4">
         My Tech Stack: Tools & Technologies I Work With
       </h1>
