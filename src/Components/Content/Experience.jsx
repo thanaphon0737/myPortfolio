@@ -1,11 +1,11 @@
 import { TbPointFilled } from "react-icons/tb";
-import data from "./experienceData"
+import data from "../../data/experienceData"
 function Experience() {
   return (
     <div className="w-lg ">
       <div className="w-full">
         {data.map((step, index) => (
-          <div key={index} className="flex items-start gap-4 relative h-32">
+          <div key={index} className="flex items-start gap-4 relative h-40">
             {/* Step Indicator */}
             <div className="flex flex-col items-center">
               {
@@ -17,7 +17,7 @@ function Experience() {
               }
               {index !== data.length - 1 && (
                 // the height is not flexible for text height
-                <div className="w-0.5 h-32 bg-gray-300"></div>
+                <div className="w-0.5 h-40 bg-gray-300"></div>
               )}
             </div>
 

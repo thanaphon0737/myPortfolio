@@ -1,14 +1,13 @@
-import { img } from "framer-motion/client";
-import data from "../Components/Content/projectData";
+import data from "../data/projectData";
 import Icon from "../Components/Content/Icon";
 function MyworkProject() {
   return (
     <>
       <div className="flex flex-col w-xl">
-        <div className="flex flex-col p-4 gap-2">
+        <div className="flex flex-col gap-12">
           {data.map((item) => (
-            <>
-            <img src={item.img} alt={item.title} className="w-lg"/>
+            <div className="flex flex-col p-4 gap-4">
+            <img src={item.img} alt={item.title} className="size-lg"/>
             <h2>{item.title}</h2>
             <span>Tools : </span> 
             <div className="card-tools flex ">
@@ -17,7 +16,7 @@ function MyworkProject() {
                 ))}
             </div>
             <div className="card-description">{item.description}</div>
-            </>
+            </div>
           ))}
         </div>
       </div>

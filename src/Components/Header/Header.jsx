@@ -2,8 +2,8 @@ import { NavLink } from "react-router";
 function Header() {
   return (
     <>
-      <header className="bg-gray-900 text-white p-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Thanaphon Thanusan</h1>
+      <header className=" text-white p-4 flex justify-between items-center">
+        <img src="/logo2.png" alt="" className="h-16"/>
         <nav>
           <ul className="flex space-x-4">
             <NavLink to="/">
