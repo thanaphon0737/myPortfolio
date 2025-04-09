@@ -8,7 +8,7 @@ function MyworkProject() {
           {data.map((item) => (
             <div className="flex flex-col p-4 gap-4">
               <a target="_blank" href={item.url}>
-                <img src={item.img} alt={item.title} className="size-lg" />
+                <img src={item.img} alt={item.title} className="size-lg ease-in-out hover:scale-105 hover:filter transition-all duration-300 rounded-lg " />
                 <h2>{item.title}</h2>
                 <span>Tools : </span>
                 <div className="card-tools flex ">

@@ -11,7 +11,7 @@ function Project() {
             <a target="_blank" href={item.url}>
               <img
                 src={item.img}
-                className="object-cover w-full size-96"
+                className="object-cover w-full size-96 ease-in-out hover:scale-105 hover:filter transition-all duration-300 rounded-lg "
                 alt={item.title}
               />
               <div className="card-info">
