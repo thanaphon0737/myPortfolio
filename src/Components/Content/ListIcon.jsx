@@ -9,23 +9,23 @@ function ListIcon() {
   const iconLast = icons.slice(half_index, icons.length);
 
   return (
-    <Element name="listIcon">
-      <div className="w-lg">
+    <div className="w-full mx-auto">
+      <Element name="listIcon">
         <h1 className="place-self-start my-4">
           My Tech Stack: Tools & Technologies I Work With
         </h1>
         <Marquee pauseOnHover={true} gradient={false} speed={60}>
           {iconFirst.map((icon) => {
-            return <Icon size={iconSize} title={icon.title} />;
+            return <Icon iconSize={iconSize} title={icon.title} />;
           })}
         </Marquee>
         <Marquee pauseOnHover={true} gradient={false} speed={60}>
           {iconLast.map((icon) => {
-            return <Icon size={iconSize} title={icon.title} />;
+            return <Icon iconSize={iconSize} title={icon.title} />;
           })}
         </Marquee>
-      </div>
-    </Element>
+      </Element>
+    </div>
   );
 }
 export default ListIcon;

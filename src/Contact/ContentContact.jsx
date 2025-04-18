@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import ContactIcon from "./ContactIcon";
 function ContentContact() {
   return (
-    <div className="content grow flex flex-col items-center justify-start gap-y-10 my-16">
+    <div className="content grow w-xs md:w-xl lg:w-4xl flex flex-col gap-y-10 my-16  mx-auto items-center">
       <motion.h1
         className="text-5xl font-bold text-center"
         initial={{ opacity: 0, y: -50 }}

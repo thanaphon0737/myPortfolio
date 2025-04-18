@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 function Landing() {
   
   return (
-    <div className="flex flex-col h-screen items-center justify-center w-xl">
+    <div className="landing flex flex-col h-screen items-center justify-center w-full">
       <motion.h1
         className="text-5xl font-bold text-center"
         initial={{ opacity: 0, y: -50 }}

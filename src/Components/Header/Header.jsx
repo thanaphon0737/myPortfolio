@@ -1,31 +1,55 @@
 import { NavLink } from "react-router";
+import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  function toggleMenu() {
+    setIsOpen(!isOpen);
+  }
   return (
     <>
-      <header className=" text-white p-4 flex justify-between items-center">
-        <img src="/logo2.png" alt="" className="h-16"/>
-        <nav>
-          <ul className="flex space-x-4">
-            <NavLink to="/">
-              <li>
-                <a className="hover:underline">Home</a>
-              </li>
-            </NavLink>
-            <NavLink to="/about">
-              <li>
-                <a className="hover:underline">About</a>
-              </li>
-            </NavLink>
-            <NavLink to="/Mywork">
-              <a className="hover:underline">My Work</a>
-            </NavLink>
-            <NavLink to="/contact">
-              <li>
-                <a className="hover:underline">Contact</a>
-              </li>
-            </NavLink>
-          </ul>
+      <header className="text-white p-4 flex justify-between items-center ">
+        <img src="/logo2.png" alt="" className="h-16" />
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex space-x-6">
+          <NavLink to="/">
+            <a className="hover:underline">Home</a>
+          </NavLink>
+          <NavLink to="/about">
+            <a className="hover:underline">About</a>
+          </NavLink>
+          <NavLink to="/Mywork">
+            <a className="hover:underline">My Work</a>
+          </NavLink>
+          <NavLink to="/contact">
+            <a className="hover:underline">Contact</a>
+          </NavLink>
         </nav>
+        {/* Mobile Hamburger */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? null : <GiHamburgerMenu size={24} />}
+          </button>
+        </div>
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden">
+            <nav className="flex flex-col p-4 space-y-2">
+              <NavLink to="/">
+                <a className="hover:underline">Home</a>
+              </NavLink>
+              <NavLink to="/about">
+                <a className="hover:underline">About</a>
+              </NavLink>
+              <NavLink to="/Mywork">
+                <a className="hover:underline">My Work</a>
+              </NavLink>
+              <NavLink to="/contact">
+                <a className="hover:underline">Contact</a>
+              </NavLink>
+            </nav>
+          </div>
+        )}
       </header>
     </>
   );

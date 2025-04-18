@@ -6,7 +6,7 @@ import Landing from "./Landing";
 function Content() {
   return (
     <>
-      <div className="content grow flex flex-col items-center justify-center  gap-y-10 my-16">
+      <div className="w-xs md:w-xl lg:w-4xl flex flex-col gap-y-10 my-16  mx-auto items-center">
         <Landing />
         <ListIcon />
 
