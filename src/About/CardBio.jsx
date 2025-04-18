@@ -2,10 +2,11 @@ import { div } from "framer-motion/client";
 import Experience from "../Components/Content/Experience";
 import ListIcon from "../Components/Content/ListIcon";
 import Project from "../Components/Content/Project";
+import Education from "../Components/Content/Education";
 function CardBio() {
   return (
-    <div className="flex flex-col gap-12">
-      <div className="flex flex-col border-2 rounded-lg w-lg gap-4 p-4 ">
+    <div className="flex flex-col gap-12 items-center justify-center my-16 w-lg">
+      <div className="flex flex-col border-2 rounded-lg gap-4 p-4 ">
         <h1>Thanaphon Thanusan</h1>
         <p className="">
           Seeking a Software Developer position in a
@@ -17,8 +18,11 @@ function CardBio() {
         </p>
       </div>
       <ListIcon />
+      <div className="flex flex-row gap-4">
+
       <Experience />
-      <Project />
+      <Education />
+      </div>
     </div>
   );
 }
