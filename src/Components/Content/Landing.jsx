@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaArrowDown } from "react-icons/fa";
 import Button from "../Button/Button";
 import { Link } from "react-scroll";
 import DecryptedText from "../ReactBits/DecryptedText";
+import TrueFocus from "../ReactBits/TrueFocus";
 function Landing() {
   return (
     <div className="landing flex flex-col h-screen items-center justify-center w-full">
@@ -12,8 +13,16 @@ function Landing() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Hi, I'm Thanaphon
+        <TrueFocus
+          sentence=" Hi, I'm Thanaphon"
+          manualMode={false}
+          blurAmount={2}
+          borderColor="blue"
+          animationDuration={1}
+          pauseBetweenAnimations={1}
+        />
       </motion.h1>
+
       <motion.h2
         className="text-xl text-gray-400 mt-4"
         initial={{ opacity: 0, y: 50 }}
