@@ -12,8 +12,8 @@ function MyworkProject() {
                 <h2>{item.title}</h2>
                 <span>Tools : </span>
                 <div className="card-tools flex flex-wrap gap-2 mb-2">
-                  {item.tools.map((tool) => (
-                    <Icon iconSize={24} title={tool.title} />
+                  {item.tools.map((tool,index) => (
+                    <Icon key={index} iconSize={24} title={tool.title} />
                   ))}
                 </div>
                 <div className="card-description">{item.description}</div>
