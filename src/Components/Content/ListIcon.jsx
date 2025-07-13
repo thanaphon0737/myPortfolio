@@ -15,13 +15,13 @@ function ListIcon() {
           My Tech Stack: Tools & Technologies I Work With
         </h1>
         <Marquee pauseOnHover={true} gradient={false} speed={60}>
-          {iconFirst.map((icon) => {
-            return <Icon iconSize={iconSize} title={icon.title} />;
+          {iconFirst.map((icon,index) => {
+            return <Icon key={index} iconSize={iconSize} title={icon.title} />;
           })}
         </Marquee>
         <Marquee pauseOnHover={true} gradient={false} speed={60}>
-          {iconLast.map((icon) => {
-            return <Icon iconSize={iconSize} title={icon.title} />;
+          {iconLast.map((icon,index) => {
+            return <Icon key={index} iconSize={iconSize} title={icon.title} />;
           })}
         </Marquee>
       </Element>

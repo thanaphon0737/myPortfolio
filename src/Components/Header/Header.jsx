@@ -13,16 +13,16 @@ function Header() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6">
           <NavLink to="/">
-            <a className="hover:underline">Home</a>
+            Home
           </NavLink>
           <NavLink to="/about">
-            <a className="hover:underline">About</a>
+            About
           </NavLink>
           <NavLink to="/Mywork">
-            <a className="hover:underline">My Work</a>
+            My Work
           </NavLink>
           <NavLink to="/contact">
-            <a className="hover:underline">Contact</a>
+            Contact
           </NavLink>
         </nav>
         {/* Mobile Hamburger */}
