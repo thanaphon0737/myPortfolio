@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaArrowDown } from "react-icons/fa";
 import Button from "../Button/Button";
 import { Link } from "react-scroll";
+import DecryptedText from "../ReactBits/DecryptedText";
 function Landing() {
-  
   return (
     <div className="landing flex flex-col h-screen items-center justify-center w-full">
       <motion.h1
@@ -20,7 +20,8 @@ function Landing() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
       >
-        Web Developer & Computer Vision Enthusiast
+        {/* Web Developer & Computer Vision Enthusiast */}
+        <DecryptedText text="Web Developer & Computer Vision Enthusiast" />
       </motion.h2>
       <motion.p
         className="mt-6 text-gray-300 text-center max-w-xl"
@@ -28,8 +29,10 @@ function Landing() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
       >
-        Passionate about building modern web applications and exploring the
-        intersection of AI & vision technology.
+        <DecryptedText
+          text="Passionate about building modern web applications and exploring the
+        intersection of AI & vision technology."
+        />
       </motion.p>
       <motion.div
         className="flex gap-4 mt-6"
